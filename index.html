@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <title>Toma tu té Totita - Home</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="navegacion">
+            <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" id="navegacion__logo">
+            
+            <nav class="categorias">
+                <ul class="categorias__menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="deco.html">Deco</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="about.html">Sobre Mi</a></li>
+                </ul>
+            </nav>
+
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Buscar..." name="buscar">
+                    <button type="submit" class="busqueda--submit"></button>
+                </form>
+            </div>
+            
+            <nav class="tienda">
+                <ul class="tienda__nav">
+                    <li><a href="login.html"><img src="images/loginIcon.jpg" alt="Login"></a></li>
+                    <li><a href="carrito.html"><img src="images/cartIcon.jpg" alt="Carrito"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner  -->
+        <section id="banners">
+            <img src="images/banner01.jpg" alt="Banner 1">
+        </section>
+
+        <!-- Sección para Productos Destacados -->
+
+        <section id="productosDestacados">
+            <h2>Productos Destacados</h2>
+
+            <!-- Cada Article es un producto diferente, en una vitrina -->
+            <article class="productosDestacados__card">
+                <img src="images/producto.jpg" alt="Producto1">
+                <h4>Nombre del Producto</h4>
+                <p>$150,00</p>
+                <button type="submit">COMPRAR</button>
+            </article>
+
+            <article class="productosDestacados__card">
+                <img src="images/producto.jpg" alt="Producto2">
+                <h4>Nombre del Producto</h4>
+                <p>$200,00</p>
+                <button type="submit">COMPRAR</button>
+            </article>
+
+            <article class="productosDestacados__card">
+                <img src="images/producto.jpg" alt="Producto3">
+                <h4>Nombre del Producto</h4>
+                <p>$1500,00</p>
+                <button type="submit">COMPRAR</button>
+            </article>
+
+            <article class="productosDestacados__card">
+                <img src="images/producto.jpg" alt="Producto3">
+                <h4>Nombre del Producto</h4>
+                <p>$320,00</p>
+                <button type="submit">COMPRAR</button>
+            </article>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto">
+            <form action="">
+                <h2>Contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar" class="contacto--enviar">
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section id="footer__minombre">
+                <p>Melisa Alvarez Terán - 2022</p>
+            </section>
+            <section id="footer__redes">
+                <a href="https://instagram.com/tomatutetotita"><img src="images/IGIcon.jpg" alt="Instagram"></a>
+            </section>
+        </footer>
+    
+    </body>
+</html>

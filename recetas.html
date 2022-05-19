@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <title>Toma tu té Totita - Recetas</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="navegacion">
+            <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" id="navegacion__logo">
+            
+            <nav class="categorias">
+                <ul class="categorias__menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="deco.html">Deco</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="about.html">Sobre Mi</a></li>
+                </ul>
+            </nav>
+
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Buscar..." name="buscar">
+                    <button type="submit" class="busqueda--submit"></button>
+                </form>
+            </div>
+            
+            <nav class="tienda">
+                <ul class="tienda__nav">
+                    <li><a href="login.html"><img src="images/loginIcon.jpg" alt="Login"></a></li>
+                    <li><a href="carrito.html"><img src="images/cartIcon.jpg" alt="Carrito"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner  -->
+        <section id="banners">
+            <img src="images/banner01.jpg" alt="Banner 1">
+        </section>
+
+        <section id="recetas">
+            
+            <nav class="filtros">
+                <h3>Filtros</h3>
+                <ul class="filtros__menu">
+                    <li>Dulce
+                        <ul>
+                            <li>Tortas</li>
+                            <li>Tartas</li>
+                        </ul>
+                    </li>
+                    <li>Salado
+                        <ul>
+                            <li>Pizza</li>
+                            <li>Tartas</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Fichas de Recetas hechas con Tablas-->
+
+            <section class="cuerpo">
+
+                <article class="receta">
+                    <table class="receta__card">
+                        <thead class="receta__titulo">
+                            <tr>
+                                <th colspan="2" scope="rowgroup">Título Receta</th>
+                            </tr>
+                        </thead>
+                        <tbody class="receta__ingredientes">
+                            <tr>
+                                <td rowspan="5" class="receta__ingredientes--foto"><img src="images/recetas01.jpeg" alt="FotoReceta" class="receta__ingredientes--foto"></td> 
+                                <th>Ingredientes</th>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 1 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 2 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 3 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 4 - 100g</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="receta__pasoapaso">
+                            <tr>
+                                <th>Paso a Paso</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="receta__pasoapaso--explicacion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil ullam rem ea voluptatibus officiis minima ducimus omnis, ipsam molestiae voluptates aperiam repellat, aliquid ex exercitationem soluta impedit quasi voluptatem!
+                                Debitis nobis modi dolorum voluptas sed. Error cumque qui ducimus excepturi molestiae ipsam nobis assumenda saepe nisi quas veritatis, ullam expedita quae quis architecto tempore sequi, fugiat sint veniam porro.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+    
+                <article class="receta">
+                    <table class="receta__card">
+                        <thead class="receta__titulo">
+                            <tr>
+                                <th colspan="2" scope="rowgroup">Título Receta</th>
+                            </tr>
+                        </thead>
+                        <tbody class="receta__ingredientes">
+                            <tr>
+                                <td rowspan="5" class="receta__ingredientes--foto"><img src="images/recetas01.jpeg" alt="FotoReceta" class="receta__ingredientes--foto"></td> 
+                                <th>Ingredientes</th>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 1 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 2 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 3 - 100g</td>
+                            </tr>
+                            <tr>
+                                <td class="receta__ingredientes--unico">Ingrediente 4 - 100g</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="receta__pasoapaso">
+                            <tr>
+                                <th>Paso a Paso</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="receta__pasoapaso--explicacion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil ullam rem ea voluptatibus officiis minima ducimus omnis, ipsam molestiae voluptates aperiam repellat, aliquid ex exercitationem soluta impedit quasi voluptatem!
+                                Debitis nobis modi dolorum voluptas sed. Error cumque qui ducimus excepturi molestiae ipsam nobis assumenda saepe nisi quas veritatis, ullam expedita quae quis architecto tempore sequi, fugiat sint veniam porro.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+
+            </section>
+
+        </section>
+
+         <footer id="footer">
+            <section id="footer__minombre">
+                <p>Melisa Alvarez Terán - 2022</p>
+            </section>
+            <section id="footer__redes">
+                <a href="https://instagram.com/tomatutetotita"><img src="images/IGIcon.jpg" alt="Instagram"></a>
+            </section>
+        </footer>
+    </body>
+</html>

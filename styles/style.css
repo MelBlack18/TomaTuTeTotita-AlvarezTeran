@@ -1,0 +1,190 @@
+html{
+    font-family: 'Indie Flower', cursive;
+}
+
+#navegacion{
+    position: fixed;
+    top: 0px;
+    background-color: #FFF;
+    width: 100%;
+}
+
+.categorias, .categorias__menu, .categorias__menu li, .busqueda, .busqueda form, .tienda, .tienda__nav, .tienda__nav li, .productosDestacados__card, #footer__minombre, #footer__redes{
+    display: inline-block;
+}
+
+#navegacion__logo{
+    margin: 30px 0px 0px 0px;
+}
+
+.categorias__menu{
+    padding: 0px 30px 0px 30px;
+}
+
+.categorias__menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0px 5px ;
+}
+
+.busqueda input{
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-family: 'Indie Flower', cursive;
+    height: 25px;
+    text-align: center;
+}
+
+.busqueda--submit{
+    background-image: url("/images/searchIcon.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.tienda{
+    position: relative;
+    right: 0px;
+}
+
+.tienda__nav{
+    padding: 0px 40px 0px 40px;
+}
+
+.tienda__nav li{
+    margin: 0px 10px;
+}
+
+#banners, .ambientaciones{
+    margin-top: 170px;
+    overflow: hidden;
+}
+
+.productosDestacados__card{
+    background-color: #F9EED3;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.productosDestacados__card h4{
+    font-size: 1.5em;
+    margin: 0px 0px 0px 10px;
+}
+
+.productosDestacados__card p{
+    font-size: 1.2em;
+    margin: 5px 10px;
+}
+
+.productosDestacados__card button, .contacto--enviar{
+    font-size: 1.2em;
+    font-family: 'Indie Flower', cursive;
+    background-color: #fe98a7;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+#shop, #recetas, #deco, #aboutme{
+    display: flex;
+    width: 100%;
+}
+
+.filtros{
+    width: 20%;
+}
+
+.filtros__menu, .filtros__menu ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.cuerpo{
+    width: 80%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.receta{
+    width: 1100px;
+    background-color: #F9EED3;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.receta__titulo th, .receta__ingredientes th, .receta__pasoapaso th{
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.receta__ingredientes--foto{
+    width: 500px;
+    height: 250px;
+}
+
+.receta__ingredientes--unico, .receta__pasoapaso--explicacion{
+    padding-left: 30px;
+}
+
+#deco .cuerpo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.decoraciones{
+    width: 45%;
+    background-color: #F9EED3;
+    margin: 20px;
+    padding: 10px;
+}
+
+.decoraciones__sliderFotos img{
+    width: 450px;
+    height: 200px;
+}
+
+.decoraciones__articulo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ambientaciones__sliderFotos{
+    background-image: url("/deco/tematicas/harrypotter01.jpeg");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.aboutme__foto{
+    width: 495px;
+    height: 681px;
+}
+
+#contacto{
+    margin: 50px 0px 0px 0px;
+    background-color: #F9EED3;
+}
+
+#contacto input, #contacto textarea{
+    display: block;
+    width: 50%;
+    margin: 10px 0px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+#footer{
+    margin-top: 30px;
+}
