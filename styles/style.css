@@ -21,8 +21,6 @@ html{
 /* Header */
 
 #navegacion{
-/*  position: fixed;
-    top: 0px; */
     background-color: #FFF;
     width: 100%;
     grid-area: navegacion;
@@ -56,6 +54,15 @@ html{
     font-weight: bold;
     font-size: 1.3em;
     margin: 0px;
+    transition: all 1s;
+}
+
+.categorias__menu a:hover{
+    transform: scale(1);
+    color: #fe98a7;
+    background-color: #F9EED3;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .busqueda{
@@ -161,6 +168,11 @@ html{
 .productosDestacados__card button{
     width: 40%;
     align-self: center;
+    transition: all 1s;
+}
+
+.productosDestacados__card button:hover{
+    transform: scale(1.2);
 }
 
 /* Division de secciones - Index */
