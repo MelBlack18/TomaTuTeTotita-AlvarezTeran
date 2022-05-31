@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <title>Toma tu té Totita - Shop</title>
     </head>
-    <body>
+    <body id="grilla">
         <!-- Header -->
         <header id="navegacion">
             <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" id="navegacion__logo">
@@ -20,7 +20,7 @@
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="recetas.html">Recetas</a></li>
                     <li><a href="deco.html">Deco</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
                     <li><a href="about.html">Sobre Mi</a></li>
                 </ul>
             </nav>
@@ -41,35 +41,38 @@
         </header>
 
         <!-- Banner  -->
-        <section id="banners">
-            <img src="images/banner02.jpg" alt="Banner 1">
-        </section>
+        <section class="banners2"></section>
 
         <section id="shop">
 
-            <nav class="filtros">
-                <h3>Filtros</h3>
-                <ul class="filtros__menu">
-                    <li>Dulce
-                        <ul>
-                            <li>Tortas</li>
-                            <li>Tartas</li>
-                            <li>Viennoiserie</li>
-                            <li>Macarons</li>
-                        </ul>
-                    </li>
-                    <li>Salado
-                        <ul>
-                            <li>Scons</li>
-                            <li>Chipa</li>
-                        </ul>
-                    </li>
-                    <li>Boxes</li>
-                </ul>
-            </nav>
+            <aside class="navegacionLateral">
+                <nav class="filtros">
+                    <h3>Filtros</h3>
+                    
+                    <ul class="filtros__menu">
+
+                        <li class="filtros__menu--dulce">Dulce
+                            <ul class="filtros__submenu--dulce">
+                                <li>Tortas</li>
+                                <li>Tartas</li>
+                                <li>Viennoiserie</li>
+                                <li>Macarons</li>
+                            </ul>
+                        </li>
+
+                        <li class="filtros__menu--salado">Salado
+                            <ul class="filtros__submenu--salado">
+                                <li>Scons</li>
+                                <li>Chipa</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="filtros__menu--boxes">Boxes</li>
+                    </ul>
+                </nav>
+            </aside>
 
             <section class="cuerpo">
-
                 <!-- Cada Article es una pequeña ficha de Producto -->
 
                 <article class="productosDestacados__card">
@@ -115,6 +118,7 @@
                 </article>
 
             </section>
+
         </section>
 
         <footer id="footer">

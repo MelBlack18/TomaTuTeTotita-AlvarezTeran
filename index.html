@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <title>Toma tu té Totita - Home</title>
     </head>
-    <body>
+    <body id="grilla">
         <!-- Header -->
         <header id="navegacion">
             <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" id="navegacion__logo">
@@ -41,54 +41,66 @@
         </header>
 
         <!-- Banner  -->
-        <section id="banners">
-            <img src="images/banner01.jpg" alt="Banner 1">
-        </section>
+        <section class="banners"></section>
 
         <!-- Sección para Productos Destacados -->
 
         <section id="productosDestacados">
-            <h2>Productos Destacados</h2>
 
-            <!-- Cada Article es un producto diferente, en una vitrina -->
-            <article class="productosDestacados__card">
-                <img src="images/producto.jpg" alt="Producto1">
-                <h4>Nombre del Producto</h4>
-                <p>$150,00</p>
-                <button type="submit">COMPRAR</button>
-            </article>
+            <header class="titulo">
+                <h2>Productos Destacados</h2>
+            </header>
+            
+            <main class="productosDestacados">
+                <!-- Cada Article es un producto diferente, en una vitrina -->
+                <article class="productosDestacados__card">
+                    <img src="images/producto.jpg" alt="Producto1">
+                    <h4>Nombre del Producto</h4>
+                    <p>$150,00</p>
+                    <button type="submit">COMPRAR</button>
+                </article>
 
-            <article class="productosDestacados__card">
-                <img src="images/producto.jpg" alt="Producto2">
-                <h4>Nombre del Producto</h4>
-                <p>$200,00</p>
-                <button type="submit">COMPRAR</button>
-            </article>
+                <article class="productosDestacados__card">
+                    <img src="images/producto.jpg" alt="Producto2">
+                    <h4>Nombre del Producto</h4>
+                    <p>$200,00</p>
+                    <button type="submit">COMPRAR</button>
+                </article>
 
-            <article class="productosDestacados__card">
-                <img src="images/producto.jpg" alt="Producto3">
-                <h4>Nombre del Producto</h4>
-                <p>$1500,00</p>
-                <button type="submit">COMPRAR</button>
-            </article>
+                <article class="productosDestacados__card">
+                    <img src="images/producto.jpg" alt="Producto3">
+                    <h4>Nombre del Producto</h4>
+                    <p>$1500,00</p>
+                    <button type="submit">COMPRAR</button>
+                </article>
 
-            <article class="productosDestacados__card">
-                <img src="images/producto.jpg" alt="Producto3">
-                <h4>Nombre del Producto</h4>
-                <p>$320,00</p>
-                <button type="submit">COMPRAR</button>
-            </article>
+                <article class="productosDestacados__card">
+                    <img src="images/producto.jpg" alt="Producto3">
+                    <h4>Nombre del Producto</h4>
+                    <p>$320,00</p>
+                    <button type="submit">COMPRAR</button>
+                </article>
+            </main>
+        </section>
+
+        <!-- Linea divisoria -->
+        <section class="division">
+                <div></div>
         </section>
 
         <!-- Formulario de Contacto -->
         <section id="contacto">
-            <form action="">
+            <form action="" class="formularioContacto">
                 <h2>Contacto</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <label for="mensaje">Mensaje</label>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar" class="contacto--enviar">
             </form>
