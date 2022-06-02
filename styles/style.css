@@ -1,37 +1,18 @@
 /* Estructura General */
 
-html{
-    font-family: 'Indie Flower', cursive;
-}
-
-#grilla{
-    margin: 0px;
-    display: grid;
-    grid-template-areas: 
-        "navegacion"
-        "banners"
-        "productosDestacados"
-        "division"
-        "contacto"
-        "footer";
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
+body{
+    font-family: 'Indie Flower', cursive !important; 
 }
 
 /* Header */
 
 #navegacion{
     background-color: #FFF;
-    width: 100%;
-    grid-area: navegacion;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
     margin: 10px 0px 30px 0px;
+    align-items: flex-end;
 }
 
-.categorias, .categorias__menu, .categorias__menu li, .busqueda, .tienda, .tienda__nav, .tienda__nav li{
+.categorias__menu li, .tienda__nav li{
     display: inline-block;
 }
 
@@ -42,10 +23,6 @@ html{
 .categorias__menu, .tienda__nav{
     padding: 0px;
     margin: 0px;
-}
-
-.categorias__menu li{
-    margin-right: 80px;
 }
 
 .categorias__menu a{
@@ -65,16 +42,10 @@ html{
     border-radius: 15px;
 }
 
-.busqueda{
-    margin-right: 50px;
-}
-
 .busqueda form{
     border: 2px solid grey;
     border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    height: 35px;
 }
 
 .busqueda input{
@@ -83,7 +54,6 @@ html{
     text-align: left;
     background-color: transparent;
     border: none;
-    margin-left: 4px;
 }
 
 .busqueda--submit{
@@ -93,12 +63,7 @@ html{
     background-color: transparent;
 }
 
-.tienda__nav li{
-    margin-right: 20px;
-}
-
 .banners{
-    grid-area: banners;
     background-image: url("/images/banner01.jpg");
     height: 500px;
     background-position: center;
@@ -115,16 +80,10 @@ html{
 
 /* Section Productos Destacados - Index */
 
-#productosDestacados{
-    grid-area: productosDestacados;
-    display: flex;
-    flex-direction: column;
-}
-
 .titulo{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
     margin-top: 50px;
 }
 
@@ -132,18 +91,18 @@ html{
     font-size: 1.8em;
 }
 
-.productosDestacados{
+/* .productosDestacados{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */
 
 .productosDestacados__card, .receta__card{
     background-color: #F9EED3;
     padding: 10px;
     margin: 10px 0px 50px 0px;
-    display: flex;
-    flex-direction: column;
+    /*  display: flex;
+    flex-direction: column; */
 }
 
 .productosDestacados__card h4{
