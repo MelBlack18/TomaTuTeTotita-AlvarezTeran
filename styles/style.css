@@ -307,6 +307,7 @@ header{
         "mensaje ."
         "mensajeArea mensajeArea"
         ". enviar";
+    padding: 20px 50px 10px 50px;
 }
 .formularioContacto h2{
     font-size: 1.8em;
@@ -348,8 +349,6 @@ header{
 }
 
 .contacto--enviar{
-    align-self: flex-end;
-    width: 20%;
     grid-area: enviar;
 }
 
@@ -360,7 +359,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #footer__minombre{
@@ -387,7 +386,14 @@ header{
         background-size: cover;
     }
 
-    
+    #productosDestacados{
+        display: none;
+    }
+
+    .carousel-item{
+        width: auto !important;
+        margin-right: -50% !important;
+    }
 
 }
 
@@ -411,6 +417,10 @@ header{
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    #carouselExampleDark{
+        display: none;
     }
 
     /* Estructura general del resto de las paginas */
