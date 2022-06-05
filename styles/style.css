@@ -5,120 +5,98 @@ html{
 }
 
 #grilla{
-    margin: 0px;
     display: grid;
-    grid-template-areas: 
-        "navegacion"
-        "banners"
-        "productosDestacados"
-        "division"
-        "contacto"
-        "footer";
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
-}
-
-/* Header */
-
-#navegacion{
-    background-color: #FFF;
-    width: 100%;
-    grid-area: navegacion;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 10px 0px 30px 0px;
-}
-
-.categorias, .categorias__menu, .categorias__menu li, .busqueda, .tienda, .tienda__nav, .tienda__nav li{
-    display: inline-block;
-}
-
-#navegacion__logo{
-    margin: 0px 40px 0px 0px;
-}
-
-.categorias__menu, .tienda__nav{
-    padding: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     margin: 0px;
 }
 
-.categorias__menu li{
-    margin-right: 80px;
-}
+    /* Header */
 
-.categorias__menu a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin: 0px;
-    transition: all 1s;
-}
+    #navegacion{
+        background-color: #FFF;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin: 10px 0px 30px 0px;
+    }
 
-.categorias__menu a:hover{
-    transform: scale(1);
-    color: #fe98a7;
-    background-color: #F9EED3;
-    padding: 5px;
-    border-radius: 15px;
-}
+    .categorias, .categorias__menu, .categorias__menu li, .busqueda, .tienda, .tienda__nav, .tienda__nav li{
+        display: inline-block;
+    }
 
-.busqueda{
-    margin-right: 50px;
-}
+    #navegacion__logo{
+        margin: 0px 40px 0px 0px;
+    }
 
-.busqueda form{
-    border: 2px solid grey;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    .categorias__menu, .tienda__nav{
+        padding: 0px;
+        margin: 0px;
+    }
 
-.busqueda input{
-    font-family: 'Indie Flower', cursive;
-    height: 25px;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-    margin-left: 4px;
-}
+    .categorias__menu li{
+        margin-right: 80px;
+    }
 
-.busqueda--submit{
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: transparent;
-}
+    .categorias__menu a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0px;
+        transition: all 1s;
+    }
 
-.tienda__nav li{
-    margin-right: 20px;
-}
+    .categorias__menu a:hover{
+        transform: scale(1);
+        color: #fe98a7;
+        background-color: #F9EED3;
+        padding: 5px;
+        border-radius: 15px;
+    }
 
-.banners{
-    grid-area: banners;
-    background-image: url("/images/banner01.jpg");
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .busqueda{
+        margin-right: 50px;
+    }
 
-.banners2{
-    grid-area: banners;
-    background-image: url("/images/banner02.jpg");
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .busqueda form{
+        border: 2px solid grey;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .busqueda input{
+        font-family: 'Indie Flower', cursive;
+        height: 25px;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        margin-left: 4px;
+    }
+
+    .busqueda--submit{
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .tienda__nav li{
+        margin-right: 20px;
+    }
 
 /* Section Productos Destacados - Index */
 
 #productosDestacados{
-    grid-area: productosDestacados;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .titulo{
@@ -136,6 +114,7 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .productosDestacados__card, .receta__card{
@@ -175,10 +154,9 @@ html{
     transform: scale(1.2);
 }
 
-/* Division de secciones - Index */
+ /* Division de secciones - Index */
 
-.division{
-    grid-area: division;
+ .division{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -189,55 +167,6 @@ html{
     height: 5px;
     width: 50%;
     background-color: #2B5970;
-}
-
-/* Estructura general del resto de las paginas */
-
-#shop, #recetas, #deco, #aboutme{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 60px;
-}
-
-.navegacionLateral{
-    width: 20%;
-}
-
-.filtros p{
-    margin: 0px;
-}
-
-.filtros{
-    margin-left: 60px;
-}
-
-.filtros h3{
-    font-size: 1.8em;
-}
-
-.filtros__menu, .filtros__menu ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.filtros__menu li{
-    font-size: 1.2em;
-}
-
-.filtros__menu ul li{
-    padding-left: 20px;
-    font-size: 1em;
-}
-
-.cuerpo{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-around;
-    width: 80%;
-    padding-right: 30px;
 }
 
 /* Recetas */
@@ -361,40 +290,57 @@ html{
 #contacto{
     margin: 0px;
     background-color: #F9EED3;
-    grid-area: contacto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0px;
 }
 
 .formularioContacto{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "contacto ."
+        "nombre ."
+        "nombreInput nombreInput"
+        "email ."
+        "emailInput emailInput"
+        "mensaje ."
+        "mensajeArea mensajeArea"
+        ". enviar";
 }
-
-.formularioContacto div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+.formularioContacto h2{
+    font-size: 1.8em;
+    grid-area: contacto;
 }
 
 .formularioContacto label{
     font-size: 1.3em;
 }
 
-.formularioContacto h2{
-    font-size: 1.8em;
+.nombre{
+    grid-area: nombre;
 }
 
-.formularioContacto div label{
-    width: 10%;
+.nombreInput{
+    grid-area: nombreInput;
 }
 
-.formularioContacto div input{
-    width: 90%;
-    height: 40px;
+.email{
+    grid-area: email;
+}
+
+.emailInput{
+    grid-area: emailInput;
+}
+
+.mensaje{
+    grid-area: mensaje;
+}
+
+.mensajeArea{
+    grid-area: mensajeArea;
 }
 
 #contacto input, #contacto textarea{
@@ -406,13 +352,13 @@ html{
 .contacto--enviar{
     align-self: flex-end;
     width: 20%;
+    grid-area: enviar;
 }
 
 /* Footer */
 
 #footer{
     margin-top: 30px;
-    grid-area: footer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -425,4 +371,106 @@ html{
 
 #footer__redes{
     padding-right: 30px;
+}
+
+@media screen and (max-width: 576px) {
+
+    #navegacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-areas: 
+            "navegacion logo busqueda"
+            "navegacion logo tienda";
+    }
+
+    .categorias{
+        grid-area: navegacion;
+    }
+
+    .navegacion__logo{
+        grid-area: logo;
+    }
+
+    .busqueda{
+        grid-area: busqueda;
+    }
+
+    .tienda{
+        grid-area: tienda;
+    }
+
+    .banners{
+        background-image: url("/images/banner01-mobile.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+
+    .banners{
+        background-image: url("/images/banner01.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .banners2{
+        background-image: url("/images/banner02.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Estructura general del resto de las paginas */
+
+    #shop, #recetas, #deco, #aboutme{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .navegacionLateral{
+        width: 20%;
+    }
+
+    .filtros p{
+        margin: 0px;
+    }
+
+    .filtros{
+        margin-left: 60px;
+    }
+
+    .filtros h3{
+        font-size: 1.8em;
+    }
+
+    .filtros__menu, .filtros__menu ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .filtros__menu li{
+        font-size: 1.2em;
+    }
+
+    .filtros__menu ul li{
+        padding-left: 20px;
+        font-size: 1em;
+    }
+
+    .cuerpo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        width: 80%;
+        padding-right: 30px;
+    }
 }

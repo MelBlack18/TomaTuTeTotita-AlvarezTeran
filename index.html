@@ -8,12 +8,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Toma tu té Totita - Home</title>
     </head>
     <body id="grilla">
         <!-- Header -->
         <header id="navegacion">
-            <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" id="navegacion__logo">
+            <img src="images/LogoTomaTuTeTotita.jpg" alt="LOGO" class="navegacion__logo">
             
             <nav class="categorias">
                 <ul class="categorias__menu">
@@ -92,16 +93,12 @@
         <section id="contacto">
             <form action="" class="formularioContacto">
                 <h2>Contacto</h2>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email">
-                </div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <label for="nombre" class="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" class="nombreInput">
+                <label for="email" class="email">Email:</label>
+                <input type="text" name="email" id="email" class="emailInput">
+                <label for="mensaje" class="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensajeArea"></textarea>
                 <input type="submit" value="Enviar" class="contacto--enviar">
             </form>
         </section>
